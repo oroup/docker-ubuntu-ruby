@@ -13,13 +13,13 @@ ENV BUNDLE_PATH=$GEM_HOME \
 
 RUN set -ex \
   && mkdir -p /usr/local/etc \
-	&& { echo 'install: --no-document' ; echo 'update: --no-document'; } > /usr/local/etc/gemrc \
+  && { echo 'install: --no-document' ; echo 'update: --no-document'; } > /usr/local/etc/gemrc \
   && buildDeps=' \
     curl \
     autoconf \
     build-essential \
     ruby \
-	' \
+  ' \
   && apt-get update \
   && apt-get install -y --no-install-recommends \
     $buildDeps \
