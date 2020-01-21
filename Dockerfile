@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
-ENV RUBY_MAJOR=2.7 \
-  RUBY_VERSION=2.7.0 \
+ENV RUBY_MAJOR=2.6 \
+  RUBY_VERSION=2.6.5 \
   GEM_HOME=/usr/local/bundle
 
 ENV BUNDLE_PATH=$GEM_HOME \
